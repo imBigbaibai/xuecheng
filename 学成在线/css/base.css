@@ -1,59 +1,56 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;   /*  css3 盒子模型 */
+}
+em,i{
+	font-style:normal;
+}
+li{
+	list-style:none;
+}
+img{
+	border:0;
+	vertical-align:middle;
+}
+button{
+	cursor:pointer;
+}
+a{
+	color:#050505;
+	text-decoration:none;
+}
+a:hover{
+	color:#c81623;
+}
+button,input{
+	font-family:Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+}
+body{
+	/* -webkit-font-smoothing:antialiased; */
+	background-color: #f3f5f7;
+	font:12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+	color:#666;
+}
+.hide,.none{
+	display:none;
+}
+.clearfix:after{
+	visibility:hidden;
+	clear:both;
+	display:block;
+	content:".";
+	height:0;
+}.clearfix{
+	*zoom:1;
+}
+/* 版心 */
+.w {
+	width: 1200px;
+	margin: auto;
 }
 h1 {
 	margin: 0;
-}
-body{
-	background-color: #f3f5f7;
-}
-header{
-	width: 1300px;
-	height: 100px;
-	margin: 0 auto;
-	background-color: pink;
-	padding-top: 30px;
-
-}
-.logo {
-	height: 42px;
-	width: 195px;
-	float: left;
-}
-.logo a {
-	display: block;
-	width: 195px;
-	height: 42px;
-	background: url('../images/logo.png')	no-repeat;
-	text-indent: -999px;
-	overflow: hidden;
-}
-nav{
-	float: left;
-	margin-left: 20px;
-}
-nav li {
-	height: 40px;
-	line-height: 40px;
-	float: left;
-	list-style: none;
-	padding-left: 10px;
-
-}
-nav li a {
-	display: block;
-	height: 40px;
-	text-decoration: none;
-	font-size: 18px;
-	color: #050505;
-	padding: 0 10px;
-
-}
-nav li a:hover{
-	border-bottom: 2px solid #1CA6FC;
 }
 
 

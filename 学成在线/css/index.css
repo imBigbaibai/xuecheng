@@ -1,0 +1,193 @@
+header{
+	width: 1300px;
+	height: 100px;
+	margin: 0 auto;
+	/* background-color: pink; */
+	padding-top: 30px;
+
+}
+
+.logo {
+	height: 42px;
+	width: 195px;
+	float: left;
+}
+.logo a {
+	display: block;
+	width: 195px;
+	height: 42px;
+	background: url('../images/logo.png')	no-repeat;
+	text-indent: -999px;
+	overflow: hidden;
+}
+nav{
+	float: left;
+	margin-left: 20px;
+}
+nav li {
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	list-style: none;
+	padding-left: 10px;
+
+}
+nav li a {
+	display: block;
+	height: 40px;
+	text-decoration: none;
+	font-size: 18px;
+	color: #050505;
+	padding: 0 10px;
+
+}
+nav li a:hover{
+	border-bottom: 2px solid #1CA6FC;
+}
+.search {
+	width: 410px;
+	height: 40px;
+	background-/* color */: purple;
+	float: left;
+	margin-left: 100px;
+}
+
+.search input {
+	width: 360px;
+	height: 40px;
+	border: 1px solid #1CA6FC;
+	float: left;
+	outline: none;
+	padding-left: 10px;
+}
+.search button {
+	width: 50px;
+	height: 40px;
+	float: left;
+	border: 0;
+	outline: none;
+	background: url('../images/fa-search.png') no-repeat;
+	cursor: pointer;
+
+}
+.personal {
+	float: right;
+	height: 40px;
+	line-height: 40px;
+}
+.personal dt, .personal dd {
+	float: left;
+	margin-right: 20px;
+	color: #303949;
+	font-size: 14px;
+
+}
+
+
+.personal s {
+	text-decoration: none;
+
+	position: relative;
+	padding: 0 20px;
+}
+.personal s::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	background-color: red;
+	top: 0;
+	right: 15px;
+	border-radius: 50%;
+}
+.personal span img{
+	border-radius: 50%;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+.banner {
+	height: 420px;
+	background-color: #1B026B
+}
+.inner {
+	height: 420px;
+	position: relative;
+}
+
+.subnav {
+	height: 100%;
+	width: 190px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	background: rgba(0, 0, 0, 0.3);
+	padding-top: 20px;
+}
+.subnav li {
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	position: relative;
+}
+
+.subnav a {
+	display: block;
+	color: #fff;
+	font-size: 14px;
+}
+.subnav a:hover {
+	color: #1CA6FC;
+}
+.subnav span {
+	position: absolute;
+	top: 0;
+	right: 20px;
+}
+
+.circle {
+	position: absolute;
+
+	height: 20px;
+	width: 176px;
+	left: 50%;
+	margin-left: -88px;
+	bottom: 15px;
+}
+.circle i {
+
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background-color: rgba(255, 255, 255, 0.4);
+	margin: 0 5px;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.circle i:hover {
+	width: 20px;
+	background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

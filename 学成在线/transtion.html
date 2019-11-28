@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>过渡动画例子</title>
+	<style>
+		div {
+			width: 300px;
+			height: 100px;
+			background-color: pink;
+			/* 过渡动画 属性，1.要改变的属性  2.过渡时间  3.过渡形式  4.过渡开始延迟时间 */
+			/* 多组属性用逗号分开 */
+			/* transition: width 0.5s ease-out 0s, height 0.5s; */
+
+			/* 我们一般写 all 0.5s  后面两个属性默认值就正合适 */
+			/* 我们把过渡写到 元素本身上， 这样当你移开鼠标时也会有动画， 用户体验比较好 */
+			transition: all 0.5s;
+		}
+		div:hover {
+			width: 900px;
+			height: 400px;
+
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	
+</body>
+</html>
