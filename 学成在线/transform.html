@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2D移动缩放的应用</title>
+</head>
+<style>
+	.late {
+		width: 200px;
+		height: 200px;
+		background-color: pink;
+		transition: all 0.8s;
+	}
+	.late:hover {
+		transform: translate(200px,0);
+
+	}
+
+	.scale {
+		width: 300px;
+		height: 300px;
+		background-color: purple;
+		transition: all 0.5s;
+	}
+	.scale:hover {
+		transform: scale(1.2, 2);
+	}
+
+	.jingdong {
+		width: 300px;
+		height: 300px;
+		overflow: hidden;
+
+	}
+	.jingdong img {
+		width: 100%;
+		height: 100%;
+	}
+	.jingdong:hover img {
+		transform: scale(1.2);
+	}
+</style>
+<body>
+	<div class="late"></div>
+
+	<div class="scale"></div>
+
+	<div class="jingdong">
+		<img src="images/图层-137.png" alt="">
+	</div>
+
+	
+</body>
+</html>
