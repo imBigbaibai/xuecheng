@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动画 annimation</title>
+	<style>
+		div {
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+			position: absolute;
+			left: 0;
+			animation: move 2s ease-out 0s 6 alternate;
+
+		}
+		@keyframes move {
+			from {
+				left: 0;
+			}
+			to {
+				left: 1000px;
+			}
+		}
+	</style>
+
+</head>
+<body>
+	<div></div>
+</body>
+</html>

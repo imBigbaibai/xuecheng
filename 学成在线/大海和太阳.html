@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>大海和太阳</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		html, body {
+			width: 100%;
+			height: 100%;
+			background-color: #2EA08B;
+			overflow: hidden;
+
+		}
+		img {
+			width: 100%;
+			height: auto;
+			position: absolute;
+			bottom: 0;
+		}
+		.first{
+			animation: move 2s linear infinite;
+		}
+		img:last-child {
+			animation: move 2s 0.5s linear infinite;
+		}
+		div {
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			left: 100px;
+			top: 50px;
+		}
+		div::before , div::after{
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -25px;
+			margin-top: -25px;
+
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			background: rgba(255, 255, 255, 0.8);
+			animation: sun 2.7s linear infinite;
+		}
+		div::after {
+			width: 80px;
+			height: 80px;
+			margin-left: -40px;
+			margin-top: -40px;
+
+			background: rgba(255, 255, 255, 0.5);
+			animation: sun 3s linear infinite;
+		}
+		@keyframes move {
+			0% {
+				bottom: 0;
+			}
+			50% {
+				bottom: -50px;
+			}
+			100% {
+				bottom: 0;
+			}
+		}
+		@keyframes sun {
+			0% {
+				transform: scale(1);
+				box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+			}
+			25% {
+				transform: scale(1.1);
+				box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+			}
+			50% {
+				transform: scale(1.15);
+				box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+			}
+			100% {
+				transform: scale(1);
+				box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	<img src="images/1.png" alt="" class="first">
+	<img src="images/2.png" alt="">
+	
+</body>
+</html>

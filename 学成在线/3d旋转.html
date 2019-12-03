@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3D旋转</title>
+	<style>
+		div {
+			position: relative;
+			perspective: 800px;
+		}
+		div:hover img {
+			transform: rotateY(180deg);
+		}
+		div img {
+			transition: all 4s;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		div img:last-child {
+			backface-visibility: hidden;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="images/1.jpg" alt="">
+		<img src="images/5.jpg" alt="">
+	</div>
+</body>
+</html>
